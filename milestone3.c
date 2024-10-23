@@ -195,6 +195,9 @@ void codepoint_to_utf8(int32_t codepoint, char result[]) {
 void next_utf8_char(char str[], int32_t cpi, char result[]){
     // take string, find position of character wnated to index up once, figure out how long the sequence is, then go to 
     // last byte and increment
+    if (strlen(str) < 4){
+        result[0] = '\0';
+    }else{
     char temp[256];
     strcpy(temp, str);
     int pos = codepoint_index_to_byte_index(str, cpi);
@@ -217,7 +220,9 @@ void next_utf8_char(char str[], int32_t cpi, char result[]){
         temp[i+codepoint_index_to_byte_index(str, cpi)] = holder[i];
     }
 
-    strcpy(result, temp);
+    // change to temp if you want the whole string
+    strcpy(result, holder);
+    }
 
 }
 
