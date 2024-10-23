@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdint.h>
-
+/*
 // milestone 1 starts here -------------------------------------------------------
 int32_t is_ascii(char str[]){
 
@@ -11,22 +11,8 @@ int32_t is_ascii(char str[]){
         }
         return 0;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    */
+// keep commented
     /*
     for(int i = 0; i < strlen(str); i++){
         if(str[i] > 127 || str[i] < 0){
@@ -53,7 +39,7 @@ int32_t capitalize_ascii(char str[]){
 
 
 
-
+/*
 int32_t capitalize_ascii(char str[]){
     int32_t total = 0;
     for (int i = 0; i < strlen(str); i++){
@@ -154,3 +140,4 @@ int main(){
 
     return 0;
 }
+*/
